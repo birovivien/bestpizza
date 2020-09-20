@@ -132,9 +132,12 @@ body {
 }
 
 .pizza-title-image {
-  width: 40vw;
   margin: auto;
-  text-align: left;
+  text-align: center;
+}
+
+.pizzakepek {
+  width: 40vw;
 }
 
 
@@ -412,6 +415,14 @@ MEDIA QUERIES
 
   .pizza-title {
     font-size: 4rem;
+  }
+  
+  .pizza-title-image {
+    text-align: center;
+  }
+
+  .pizzakepek {
+    width: 90vw;
   }
 
   .myButton {
