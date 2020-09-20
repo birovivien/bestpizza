@@ -1,0 +1,496 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Crimson Text', serif;
+  margin: 0;
+
+}
+
+.container-fluid {
+  padding: 0 10% 0;
+  background-color: #d8c0c0;
+}
+
+.white-section {
+  text-align: center;
+  background-color: #f5eeee;
+}
+
+.curve {
+  background: #d8c0c0;
+}
+
+  .bg-colored {
+  background: #f5eeee;
+  color: #311d1d;
+}
+
+.split {
+  max-width: 40%;
+  height: 0px;
+  border: none;
+  border-top: 4px solid #d8c0c0;
+  margin-bottom: 0;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  max-width: 25%;
+}
+
+.pizza-icon {
+  width: 25%;
+}
+
+.navbar .navbar-nav {
+  margin: 0 auto;
+}
+
+.nav-item {
+  padding: 0 3%;
+}
+
+.navbar .nav-item .nav-link{
+  color: #311d1d;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.8vh;
+  font-weight: bold;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:4px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:6px 24px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #854629;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+  background-color:#bc3315;
+  text-decoration: none;
+  color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.row {
+  margin: 0;
+  padding-top: 3%;
+  text-align: center;
+}
+
+.pizza-title-text {
+  padding-top: 2rem;
+  margin: auto;
+  text-align: left;
+}
+
+.pizza-title {
+  font-size: 6rem;
+  line-height: .7;
+  font-weight: bold;
+  margin-bottom: 8%;
+}
+
+.pizza-text {
+  font-size: 1.2rem;
+  margin-bottom: 10%;
+}
+
+.about-us-button {
+  width: 30%;
+  background-color: #fe2a2a;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.about-us-button:hover {
+  background-color: #fe2a2a;
+  opacity: .6;
+}
+
+.pizza-title-image {
+  width: 40vw;
+  margin: auto;
+  text-align: left;
+}
+
+
+/* PIZZÁINK */
+
+
+#pizzas-title {
+  font-size: 3rem;
+  color: #311d1d;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.pizza-cards {
+  padding: 6% 10% 5%;
+}
+
+.order-image {
+  width: 80%;
+}
+
+.card {
+  border: 5px solid #fff;
+  border-radius: 4%;
+}
+
+.card-header {
+  background-color: transparent;
+  border: none;
+}
+
+.pizza-name {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #311d1d;
+}
+
+.toppings {
+  color: #311d1d;
+}
+
+.price {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.pricing-column {
+  padding: 3% 4%;
+}
+
+
+
+/* +, - GOMBOK */
+
+.quantity {
+	background-color: #e4685d;
+	display: inline-block;
+	cursor: pointer;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+  text-decoration: none;
+}
+.quantity:hover {
+  background-color: #eb675e;
+}
+.quantity:active {
+	position: relative;
+	top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.input {
+  max-width: 10%;
+  text-align: center;
+}
+
+
+
+/*NYILACSKÁK ELREJTÉSE JOBB OLDALRÓL A SZÁM MEZŐBEN*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+/* RÓLUNK*/
+
+.about-us {
+  text-align: left;
+  padding: 5% 0;
+}
+
+.about-us-image {
+  padding: 0;
+  text-align: center;
+}
+
+.pizza-image {
+  width: 40vw;
+}
+
+
+
+.about-us-container {
+  padding: 2% 0 0 4%;
+}
+
+.fancy-text {
+  font-size: 5vw;
+  font-family: 'Dancing Script', cursive;
+  color: #fe2a2a;
+}
+
+.about-us-title {
+  padding-top: 3%;
+  font-size: 5vw;
+  line-height: 1;
+  font-weight: bold;
+  max-width: 80%;
+  color: #311d1d;
+}
+
+.about-us-text {
+  max-width: 70%;
+  font-size: 1.2rem;
+  color: #311d1d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  padding-bottom: 5%;
+  background-color: #f5eeee;
+  margin: 0 auto;
+}
+
+.city {
+  color: #fe2a2a;
+  font-weight: bold;
+}
+
+.horizontal-rule {
+  max-width: 50%;
+  height: 0px;
+  border: none;
+  border-top: 4px solid #d8c0c0;
+}
+
+.icons-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.icons {
+  font-size: 2rem;
+  padding: 0 3%;
+  color: #fe2a2a;
+}
+
+.icons:hover {
+  color: #fe2a2a;
+  opacity: .6;
+}
+
+
+
+
+/****************
+MEDIA QUERIES
+****************/
+
+@media screen and (min-width: 993px) and (max-width: 1300px) {
+
+  body {
+    text-align: center;
+  } 
+
+  .navbar .navbar-brand {
+    font-size: 2.5vh;
+  }
+
+  .navbar .nav-item .nav-link{
+    font-size: 1.8vh;
+  }
+
+  .about-us-container {
+    padding: 0 0 0 4%;
+  }
+
+  .order-image {
+    width: 70%;
+  }
+
+  .icons {
+    font-size: 2.6vh;
+    margin-left: 4%;
+  }
+
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+  body {
+    text-align: center;
+  }
+
+  .split {
+    max-width: 60%;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+  .navbar .navbar-brand {
+    font-size: 3vh;
+  }
+
+  .navbar .nav-item .nav-link{
+    font-size: 3vh;
+  }
+
+
+
+
+  /* FŐOLDAL */
+
+  .pizza-title-text {
+    text-align: center;
+    margin: 0 15%;
+  }
+
+  .pizza-title {
+    font-size: 4rem;
+  }
+
+  .myButton {
+    margin-bottom: 10%;
+  }
+
+
+
+  /* PIZZÁINK */  
+
+  .pricing-column {
+    margin: 4% 0;
+  }
+
+  .card-header {
+    padding: 0;
+  }
+
+  .card-body {
+    padding: 1.2rem .5rem;
+  }
+
+  .order-image {
+    width: 65%;
+    padding: 5%;
+  }
+
+
+
+  /* RÓLUNK */
+
+  .about-us {
+    text-align: center;    
+    margin: 0;
+  }
+
+  .about-us-container {
+    padding: 0;
+  }
+
+  .fancy-text {
+    font-size: 3rem;
+    margin-top: 3%;
+  }
+
+  .about-us-title {
+    font-size: 2rem;
+    margin: 0;
+    max-width: 100%;
+    margin: 0 0 3%;
+  }
+
+  .about-us-text {
+    max-width: 100%;
+    margin: 0 15%;
+  }
+
+  .pizza-image {
+    width: 60vw;
+  }
+
+
+
+  /* FOOTER */
+
+  .icons-container {
+    display: none;
+  }
+
+  .icons {
+    padding: 3%;
+    margin-left: 0;
+    font-size: 2.5vh;
+  }
+
+  .address1 {
+    padding-bottom: 10%;
+  }
+
+
+
+
+
+}
