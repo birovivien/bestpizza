@@ -1,0 +1,35 @@
+* {
+  scroll-behavior: smooth;
+}
+
+html, body {
+    background-color: #f5eeee;
+    font-family: 'Crimson Text', serif;
+}
+
+.curve2 {
+  background: #f5eeee;
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+#pizzas-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.order-image {
+  width: 50%;
+}
+
+.kosarbaGomb {
+font-size: 1.4rem;
+}
+
+
+.kosarAdat {
+  font-size: 1.4em;
+}
