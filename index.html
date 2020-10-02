@@ -15,9 +15,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/topButton.css">
+  <link rel="stylesheet" href="css/pizzakStyles.css">
 
 
-
+  <script src="https://unpkg.com/cart-localstorage@1.1.4/dist/cart-localstorage.min.js" type="text/javascript"></script>
 
 
   <!-- Font Awesome -->
@@ -45,9 +46,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav  ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Főoldal</a>
+              <a class="nav-link" href="">Főoldal</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#pizzas">Pizzák</a>
@@ -59,8 +60,9 @@
               <a class="nav-link" href="#kapcsolat">Kapcsolat</a>
             </li>
             <li class="nav-item">
-              <div class="cart">
-                <a class="nav-link" href="#kosar"><i class="fas fa-shopping-cart"></i></a>
+              <div class="cartIcon">
+                <a class="nav-link" href="kosar.html"><i class="fas fa-shopping-cart"></i>
+                  <strong class="cart total vegosszeg"></strong></a>
               </div>
             </li>
           </ul>
@@ -70,6 +72,7 @@
 
     </div>
 
+    <!-- Főoldal -->
 
     <div class="container-fluid">
       <div class="row">
@@ -77,7 +80,7 @@
           <h1 class="pizza-title">Pizza <br> Forever</h1>
           <p class="pizza-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat.</p>
-            <a href="#" class="myButton">Rólunk</a>
+          <button type="button" class="rolunkButton btn btn-danger"><a href="#rolunk">Rólunk</a></button>
         </div>
         <div class="pizza-title-image col-lg-6">
           <img class="pizzakepek" src="images/pizzakepek.png" alt="">
@@ -95,6 +98,7 @@
 
 
 
+  <!-- Pizzáink -->
 
   <section class="white-section" id="pizzas">
 
@@ -110,14 +114,8 @@
           <div class="card-body">
             <h2 class="pizza-name">Pepperoni</h2>
             <p class="toppings">Pepperoni, chicken, cheese, tomato sauce, pickle, onion</p>
-            <p class="price">1800 ft</p>
-            <div class="quantity-buttons">
-              <button class="quantity">-</button>
-              <input type="number" class="input" value="1" min="1" />
-              <button class="quantity">+</button>
-            </div>
-            <br>
-            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Kosárba</button>
+            <h1 class="card-title pricing-card-title">1000 ft</h1>
+            <button type="button" class="kosarbaGomb btn btn-block btn-danger" onClick="cartLS.add({id: 1, name: 'Pepperoni', price: 1000})">Kosárba</button>
           </div>
         </div>
       </div>
@@ -130,16 +128,10 @@
             <img class="order-image" src="images/pizza-order.png" alt="">
           </div>
           <div class="card-body">
-            <h2 class="pizza-name">Pepperoni</h2>
+            <h2 class="pizza-name">Margherita</h2>
             <p class="toppings">Pepperoni, chicken, cheese, tomato sauce, pickle, onion</p>
-            <p class="price">1800 ft</p>
-            <div class="quantity-buttons">
-              <button class="quantity">-</button>
-              <input type="number" class="input" value="1" min="1" />
-              <button class="quantity">+</button>
-            </div>
-            <br>
-            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Kosárba</button>
+            <h1 class="card-title pricing-card-title">1600 ft</h1>
+            <button type="button" class="kosarbaGomb btn btn-block btn-danger" onClick="cartLS.add({id: 2, name: 'Margherita', price: 1600})">Kosárba</button>
           </div>
         </div>
       </div>
@@ -150,16 +142,10 @@
             <img class="order-image" src="images/pizza-order.png" alt="">
           </div>
           <div class="card-body">
-            <h2 class="pizza-name">Pepperoni</h2>
+            <h2 class="pizza-name">Négysajtos</h2>
             <p class="toppings">Pepperoni, chicken, cheese, tomato sauce, pickle, onion</p>
-            <p class="price">1800 ft</p>
-            <div class="quantity-buttons">
-              <button class="quantity">-</button>
-              <input type="number" class="input" value="1" min="1" />
-              <button class="quantity">+</button>
-            </div>
-            <br>
-            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Kosárba</button>
+            <h1 class="card-title pricing-card-title">1300 ft</h1>
+            <button type="button" class="kosarbaGomb btn btn-block btn-danger" onClick="cartLS.add({id: 3, name: 'Négysajtos', price: 1300})">Kosárba</button>
           </div>
         </div>
       </div>
@@ -170,16 +156,10 @@
             <img class="order-image" src="images/pizza-order.png" alt="">
           </div>
           <div class="card-body">
-            <h2 class="pizza-name">Pepperoni</h2>
+            <h2 class="pizza-name">Jalapeno</h2>
             <p class="toppings">Pepperoni, chicken, cheese, tomato sauce, pickle, onion</p>
-            <p class="price">1800 ft</p>
-            <div class="quantity-buttons">
-              <button class="quantity">-</button>
-              <input type="number" class="input" value="1" min="1" />
-              <button class="quantity">+</button>
-            </div>
-            <br>
-            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Kosárba</button>
+            <h1 class="card-title pricing-card-title">1000 ft</h1>
+            <button type="button" class="kosarbaGomb btn btn-block btn-danger" onClick="cartLS.add({id: 4, name: 'Jalapeno', price: 1000})">Kosárba</button>
           </div>
         </div>
       </div>
@@ -190,16 +170,10 @@
             <img class="order-image" src="images/pizza-order.png" alt="">
           </div>
           <div class="card-body">
-            <h2 class="pizza-name">Pepperoni</h2>
+            <h2 class="pizza-name">Songoku</h2>
             <p class="toppings">Pepperoni, chicken, cheese, tomato sauce, pickle, onion</p>
-            <p class="price">1800 ft</p>
-            <div class="quantity-buttons">
-              <button class="quantity">-</button>
-              <input type="number" class="input" value="1" min="1" />
-              <button class="quantity">+</button>
-            </div>
-            <br>
-            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Kosárba</button>
+            <h1 class="card-title pricing-card-title">1400 ft</h1>
+            <button type="button" class="kosarbaGomb btn btn-block btn-danger" onClick="cartLS.add({id: 5, name: 'Songoku', price: 1400})">Kosárba</button>
           </div>
         </div>
       </div>
@@ -210,36 +184,26 @@
             <img class="order-image" src="images/pizza-order.png" alt="">
           </div>
           <div class="card-body">
-            <h2 class="pizza-name">Pepperoni</h2>
+            <h2 class="pizza-name">Hawaii</h2>
             <p class="toppings">Pepperoni, chicken, cheese, tomato sauce, pickle, onion</p>
-            <p class="price">1800 ft</p>
-            <div class="quantity-buttons">
-              <button class="quantity">-</button>
-              <input type="number" class="input" value="1" min="1" />
-              <button class="quantity">+</button>
-            </div>
-            <br>
-            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Kosárba</button>
+            <h1 class="card-title pricing-card-title">1300 ft</h1>
+            <button type="button" class="kosarbaGomb btn btn-block btn-danger" onClick="cartLS.add({id: 6, name: 'Hawaii', price: 1300})">Kosárba</button>
           </div>
         </div>
       </div>
     </div>
-
-      
-
-    <hr class="split">
-
   </section>
 
 
 
-  <!-- ABOUT US -->
+
+  <!-- Rólunk -->
 
   <section class="white-section">
 
     <div class="row about-us">
       <div class="about-us-image col-lg-6">
-        <img class="pizza-image"  id="rolunk" src="images/rolunk-kep.png" alt="">
+        <img class="pizza-image" id="rolunk" src="images/rolunk-kep.png" alt="">
       </div>
 
       <div class="about-us-container col-lg-6 col-sm-12">
@@ -258,7 +222,7 @@
 
 
 
-  <!-- CONTACT -->
+  <!-- KAPCSOLAT -->
 
 
 
@@ -307,7 +271,7 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
     <script src="topButton.js"></script>
   </div>
-  <script src="addToCart.js"></script>
+  <script src="pizzakStore.js" charset="utf-8"></script>
 </body>
 
 </html>
