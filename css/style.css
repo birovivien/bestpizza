@@ -5,11 +5,10 @@
 body {
   font-family: 'Crimson Text', serif;
   margin: 0;
-
 }
 
 .container-fluid {
-  padding: 0 10% 0;
+  padding: 0 10%;
   background-color: #d8c0c0;
 }
 
@@ -19,6 +18,10 @@ body {
 }
 
 .curve {
+  background: #d8c0c0;
+}
+
+.curve2 {
   background: #d8c0c0;
 }
 
@@ -35,23 +38,27 @@ body {
   margin-bottom: 0;
 }
 
-.navbar .navbar-brand {
+
+
+
+/* Navbar */
+
+.navbar  {
   color: #fff;
   font-family: 'Raleway', sans-serif;
-  max-width: 25%;
   margin: 0;
   text-align: left;
+}
+
+.navbar-brand {
+  width: 25%;
 }
 
 .pizza-icon {
   width: 25%;
 }
 
-.navbar .navbar-nav {
-  margin: 0 auto;
-}
-
-.nav-item {
+.navbar {
   padding: 0 3%;
 }
 
@@ -66,32 +73,26 @@ body {
   text-align: center;
 }
 
-.myButton {
-	box-shadow:inset 0px 1px 0px 0px #cf866c;
-	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
-	background-color:#d0451b;
-	border-radius:4px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:19px;
-	padding:6px 24px;
-	text-decoration:none;
-  text-shadow:0px 1px 0px #854629;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+.cartIcon {
+  border: 2px solid #d9534f;
+  border-radius: 20px;
+  background-color: #d9534f;
+  color: #fff;
 }
-.myButton:hover {
-	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
-  background-color:#bc3315;
+
+/* Rólunk gomb*/
+
+.rolunkButton {
+  font-size: 1.7rem;
+  padding: 1% 7%;
+}
+
+a, a:hover {
   text-decoration: none;
-  color:#ffffff;
+  color: #fff;
 }
-.myButton:active {
-	position:relative;
-	top:1px;
-}
+
+/* FŐOLDAL */
 
 .row {
   margin: 0;
@@ -117,20 +118,6 @@ body {
   margin-bottom: 10%;
 }
 
-.about-us-button {
-  width: 30%;
-  background-color: #fe2a2a;
-  border: none;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.6rem;
-}
-
-.about-us-button:hover {
-  background-color: #fe2a2a;
-  opacity: .6;
-}
-
 .pizza-title-image {
   margin: auto;
   text-align: center;
@@ -141,8 +128,9 @@ body {
 }
 
 
-/* PIZZÁINK */
 
+
+/* PIZZÁINK */
 
 #pizzas-title {
   font-size: 3rem;
@@ -152,7 +140,7 @@ body {
 }
 
 .pizza-cards {
-  padding: 6% 10% 5%;
+  padding: 6% 10%;
 }
 
 .order-image {
@@ -160,8 +148,8 @@ body {
 }
 
 .card {
-  border: 5px solid #fff;
-  border-radius: 4%;
+  border: 5px solid #d8c0c0;
+  border-radius: 10px;
 }
 
 .card-header {
@@ -185,7 +173,7 @@ body {
 }
 
 .pricing-column {
-  padding: 3% 4%;
+  margin: 3% 0;
 }
 
 
@@ -208,21 +196,6 @@ body {
 	position: relative;
 	top: 1px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .input {
@@ -265,8 +238,6 @@ input[type=number] {
   width: 40vw;
 }
 
-
-
 .about-us-container {
   padding: 2% 0 0 4%;
 }
@@ -295,15 +266,7 @@ input[type=number] {
 
 
 
-
-
-
-
-
-
-
-
-/* FOOTER */
+/* KAPCSOLAT */
 
 .footer {
   text-align: center;
@@ -351,32 +314,6 @@ input[type=number] {
 MEDIA QUERIES
 ****************/
 
-@media screen and (min-width: 993px) and (max-width: 1300px) {
-
-  body {
-    text-align: center;
-  } 
-
-  .navbar .nav-item .nav-link{
-    font-size: 1.8vh;
-  }
-
-  .about-us-container {
-    padding-bottom: 4%;
-  }
-
-  .order-image {
-    width: 70%;
-  }
-
-  .icons {
-    font-size: 2.6vh;
-    margin-left: 4%;
-  }
-
-
-}
-
 
 @media screen and (max-width: 992px) {
 
@@ -391,6 +328,9 @@ MEDIA QUERIES
   .container-fluid {
     padding: 0;
   }
+
+  /* NAVBAR */
+
   .navbar .navbar-brand {
     font-size: 3vh;
   }
@@ -410,13 +350,13 @@ MEDIA QUERIES
 
   .pizza-title-text {
     text-align: center;
-    margin: 0 15%;
+    margin: 0 5%;
   }
 
   .pizza-title {
     font-size: 4rem;
   }
-  
+
   .pizza-title-image {
     text-align: center;
   }
@@ -431,7 +371,7 @@ MEDIA QUERIES
 
 
 
-  /* PIZZÁINK */  
+  /* PIZZÁINK */
 
   .pricing-column {
     margin: 4% 0;
@@ -455,7 +395,7 @@ MEDIA QUERIES
   /* RÓLUNK */
 
   .about-us {
-    text-align: center;    
+    text-align: center;
     margin: 0;
   }
 
@@ -477,7 +417,7 @@ MEDIA QUERIES
 
   .about-us-text {
     max-width: 100%;
-    margin: 0 15%;
+    margin: 0 10%;
   }
 
   .pizza-image {
@@ -486,7 +426,7 @@ MEDIA QUERIES
 
 
 
-  /* FOOTER */
+  /* KAPCSOLAT */
 
   .icons-container {
     display: none;
@@ -501,9 +441,5 @@ MEDIA QUERIES
   .address1 {
     padding-bottom: 10%;
   }
-
-
-
-
 
 }
